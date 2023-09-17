@@ -467,38 +467,6 @@
                 auth_id:uniqid()
             }));
         });
-        socket.addEventListener("message",(data)=>{
-            let obj = JSON.parse(data.data);
-            console.log(obj);
-            
-            
-            
-        });
-        
-        function update_chart(){
-            let canvas =document.getElementById('ABCDEFG');
-            // Chart settings
-            const ctx = canvas.getContext("2d");
-            const myChart = new Chart(ctx, {
-            type: 'line',
-            data: {
-                labels: [1,2,3,4],
-                datasets: [{
-                label: '# of Votes',
-                data: [1,2,3,4,5],
-                borderWidth: 1
-                }]
-            },
-            options: {
-                scales: {
-                y: {
-                    beginAtZero: true
-                }
-                }
-            }
-            });
-
-        }
        
 
         
